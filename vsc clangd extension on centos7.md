@@ -1,4 +1,4 @@
-When using vscode to develop cpp code with extension clangd. It's unable to run clangd because the libc version problem. 
+In centos7, when using vscode to develop cpp code with extension clangd. It's unable to run clangd because the libc version problem. 
 
 The problem solver should be compile clangd from source: ref : https://jdhao.github.io/2021/07/03/install_clangd_on_linux/
 ```
