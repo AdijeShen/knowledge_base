@@ -24,9 +24,17 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 
 e.g.
 
-
 ```
 cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 ```
 
 then the `compile_commands.json` would be in build directory, put it into the source dir to make clangd available.
+
+or in the `CMakeLists.txt`, add `set(CMAKE_EXPORT_COMPILE_COMMANDS ON)`, then the `compile_commands.json` should be in the cmake output directory.
+
+if your `compile_commands.json` is in `build` dir, then in the vsode `settings.json` file, add the following codes:
+````
+    "clangd.arguments": [
+        "-compile-commands-dir=build"
+    ],
+```
