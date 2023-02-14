@@ -33,7 +33,7 @@ then the `compile_commands.json` would be in build directory, put it into the so
 or in the `CMakeLists.txt`, add `set(CMAKE_EXPORT_COMPILE_COMMANDS ON)`, then the `compile_commands.json` should be in the cmake output directory.
 
 if your `compile_commands.json` is in `build` dir, then in the vsode `settings.json` file, add the following codes:
-````
+```
     "clangd.arguments": [
         "-compile-commands-dir=build"
     ],
